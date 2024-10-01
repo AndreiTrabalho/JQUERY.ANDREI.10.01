@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--INICIO HEAD // INICIO HEAD // INICIO HEAD // INICIO HEAD // INICIO HEAD // INICIO HEAD // INICIO HEAD // INICIO HEAD-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo2</title>
+
+    <link rel="stylesheet" href="ModeloAndrei.css"> <!--CSS EXTERNO-->
+
+    <style>
+        /*CSS INTERNO*/
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jquery: simplificaremos o jss com o elemento $ -->
+
+</head>
+
+<body>
+    <!--INICIO BODY // INICIO BODY // INICIO BODY // INICIO BODY // INICIO BODY // INICIO BODY // INICIO BODY // INICIO BODY-->
+
+    <header>
+        <!--INICIO HEADER // INICIO HEADER // INICIO HEADER // INICIO HEADER // INICIO HEADER // INICIO HEADER // INICIO HEADER-->
+
+    </header>
+
+    <main>
+        <!--INICIO MAIN // INICIO MAIN // INICIO MAIN // INICIO MAIN // INICIO MAIN // INICIO MAIN // INICIO MAIN // INICIO MAIN-->
+        <p>Essa é a frase 1 em bloco p, clique para apagar</p>
+        <p>Essa é a frase 2 em bloco p, clique para apagar</p>
+        <p>Essa é a frase 3 em bloco p, clique para apagar</p>
+        <h1>Esse é o H1</h1>
+        <h2>Esse é o H2</h2>
+        <H3>Esse é o H3. O título H2 acima e dois dos três H4 abaixo deve estar apagado</H3>
+        <h4 class="oi1">Esse é o H4 de classe</h4>
+        <h4 id="oi2">Esse é o H4 de classe</h4>
+        <h4>Esse é o H4 de classe</h4>
+        <script>
+            $(document).ready(function () { 
+                $("*").click(function () { // use * para aplicar a tudo ao clicar //
+                    $(this).hide();
+                });
+            });
+            $("h2").hide()
+            $(".oi1").hide()
+            $("#oi2").hide()
+        </script>
+
+    </main>
+
+    <footer>
+        <!--INICIO FOOTER // INICIO FOOTER // INICIO FOOTER // INICIO FOOTER // INICIO FOOTER // INICIO FOOTER // INICIO FOOTER-->
+
+    </footer>
+
+</body>
+
+</html>
